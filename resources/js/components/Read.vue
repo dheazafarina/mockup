@@ -17,8 +17,9 @@
 <template>
   <div>
     <!-- Login -->
-    <div class="card border-light"
-      v-if="!show">
+    <div v-if="!show"
+      class="card border-light"
+      style="padding: 15px">
       <form>
         <div class="form-group">
           <input type="email" class="form-login form-control" id="exampleInputEmail1" placeholder="Email">
@@ -38,20 +39,21 @@
       </button>
     </div>
     <!-- Discover -->
-    <div v-if="show">
+    <div v-if="show"
+      style="padding: 15px">
       <div v-for="member in members" :key="members.name"
         class="card border-light shadow mt-4"
         style="border-radius: 20px;">
-        <div class="row no-gutters">
-          <div class="col-md-2 ml-4">
+        <div class="row no-gutters" style="padding: 10px;">
+          <div class="col">
             <img
               :src="member.img"
-              style="width: 100px; border-radius: 50%;"
+              style="width: 80px; border-radius: 50%;"
               class="mt-2 mb-2 card-img"
               alt="img">
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
+          <div class="col">
+            <div class="card-body" style="margin-left: -40%;">
               <h5 class="card-title font-weight-bold">{{ member.name }}</h5>
               <p class="card-text">{{ member.email }}</p>
             </div>

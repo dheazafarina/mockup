@@ -1,27 +1,60 @@
+<style>
+  .content {
+    background: linear-gradient(to top, #F37335, #FDC830);
+    height: 15rem;
+  }
+  .menu {
+    width: 18rem;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 10px;
+    height: 20%;
+    background: white !important;
+    border-radius: 10px;
+  }
+  .dropdown-divider {
+    height: 0;
+    margin-top: 5rem;
+    overflow: hidden;
+    border-top: 4px solid #e65d0d;
+    border-radius: 50px;
+    width: 10pc;
+  }
+</style>
+
 <template>
-  <div style="background: linear-gradient(to top, #F37335, #FDC830); height: 12rem;">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        This is some text within a card body.
+  <div class="content">
+    <!-- <div class="menu border-light" style="width: 18rem;">
+      <div class="header font-weight-bold">
+        Login
       </div>
+      <center>
+      <div class="dropdown-divider"></div>
+      </center>
+    </div> -->
+
+    <div class="row" style="margin-left: 10px; margin-top: 38px; position: absolute">
+      <div class="col-sm-6">
+        <div class="card border-light" style="width: 15pc;">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Login</h5>
+            <center>
+              <div class="dropdown-divider"></div>
+            </center>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body font-weight-bold">
+            <h5 class="card-title">Discover</h5>
+            <center>
+              <div class="dropdown-divider"></div>
+            </center>
+          </div>
+        </div>
+      </div> -->
     </div>
-    
-    <!-- <div class="navbar-header">
-      <a class="navbar-brand" href="#"><i class="fa fa-home"></i></a>
-    </div>
-    <ul class="nav navbar-nav scroll">
-      <li><a href="#">Hyperlink</a></li>
-      <li><a href="#">Hyperlink</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret hidden-xs"></span></a>
-      </li>
-      <li><a href="#">Hyperlink</a></li>
-      <li><a href="#">Hyperlink</a></li>
-      <li><a href="#">Hyperlink</a></li>
-      <li><a href="#">Hyperlink</a></li>
-      <li><a href="#">Hyperlink</a></li>
-      <li><a href="#">Hyperlink</a></li>
-    </ul> -->
 
   </div>
 </template>

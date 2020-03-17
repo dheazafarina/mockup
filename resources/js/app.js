@@ -8,15 +8,6 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
-// import dependecies tambahan
-// import VueRouter from 'vue-router';
-
-// Vue.use(VueRouter);
-
-// import file yang dibuat tadi
-// import App from './components/App.vue';
-// import Read from './components/Read.vue';
-
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -40,15 +31,3 @@ Vue.component('read', require('./components/Read.vue').default);
 const app = new Vue({
     el: '#app',
 });
-
-// membuat router
-// const routes = [
-//     {
-//         name: 'read',
-//         path: '/',
-//         component: Read
-//     }
-// ]
-
-// const router = new VueRouter({ mode: 'history', routes: routes });
-// new Vue(Vue.util.extend({ router }, App)).$mount("#app");

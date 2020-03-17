@@ -1,27 +1,43 @@
+<style>
+.form-login {
+  border: 0px transparent;
+  border-bottom: 1px solid;
+  border-radius: inherit;
+}
+.form-group {
+  margin-top: 20px;
+  padding: 10px;
+}
+.card {
+  border-radius: 15px;
+  margin-top: -17px;
+}
+</style>
+
 <template>
-  <div class="container-fluid">
-    <div v-if="!show">
+  <div>
+    <!-- Login -->
+    <div class="card border-light"
+      v-if="!show">
       <form>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input type="email" class="form-login form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">  
+          <input type="password" class="form-login form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
       </form>
+      <button type="button" class="btn btn-link" style="text-align: left;">Forget your password?</button>
       <button
-        @click="clicked" 
+        @click="clicked"
         type="button"
         class="btn btn-primary btn-lg btn-block text-dark border-light"
         style="margin-top: 45px;
               background: linear-gradient(to left, #F37335, #FDC830);">
         Login
       </button>
-      <button type="button" class="btn btn-link">Forgot password ?</button>
     </div>
-
+    <!-- Discover -->
     <div v-if="show">
       <div v-for="member in members" :key="members.name"
         class="card border-light shadow mt-4"

@@ -3,14 +3,9 @@
     background: linear-gradient(to top, #F37335, #FDC830);
     height: 15rem;
   }
-  .menu {
-    width: 18rem;
-    margin-top: 20px;
-    position: absolute;
-    margin-left: 10px;
-    height: 20%;
-    background: white !important;
-    border-radius: 10px;
+  .img-carousel {
+    margin-top: 35px !important;
+    margin-left: 20%;
   }
   .dropdown-divider {
     height: 0;
@@ -24,50 +19,29 @@
 
 <template>
   <div class="content">
-    <!-- <div class="menu border-light" style="width: 18rem;">
-      <div class="header font-weight-bold">
-        Login
-      </div>
-      <center>
-      <div class="dropdown-divider"></div>
-      </center>
-    </div> -->
-
-    <div class="row" style="margin-left: 10px; margin-top: 38px; position: absolute">
-      <div class="col-sm-6">
-        <div class="card border-light" style="width: 15pc;">
-          <div class="card-body">
-            <h5 class="card-title font-weight-bold">Login</h5>
-            <center>
-              <div class="dropdown-divider"></div>
-            </center>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active"  interval="false">
+          <div class="card border-light img-carousel" style="width: 15pc;">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Login</h5>
+              <center>
+                <div class="dropdown-divider"></div>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" interval="false">
+          <div class="card border-light img-carousel" style="width: 15pc;">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Discover</h5>
+              <center>
+                <div class="dropdown-divider"></div>
+              </center>
+            </div>
           </div>
         </div>
       </div>
-      <!-- <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body font-weight-bold">
-            <h5 class="card-title">Discover</h5>
-            <center>
-              <div class="dropdown-divider"></div>
-            </center>
-          </div>
-        </div>
-      </div> -->
     </div>
-
   </div>
 </template>
-
-<style>
-.navbar-nav li {
-
-    display: inline-block;
- 
-}
-.scroll {
-  white-space: nowrap;
-  overflow-x: auto; 
-  -webkit-overflow-scrolling: touch;
-}
-</style>

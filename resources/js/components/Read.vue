@@ -1,19 +1,3 @@
-<style>
-.form-login {
-  border: 0px transparent;
-  border-bottom: 1px solid;
-  border-radius: inherit;
-}
-.form-group {
-  margin-top: 20px;
-  padding: 10px;
-}
-.card {
-  border-radius: 15px;
-  margin-top: -17px;
-}
-</style>
-
 <template>
   <div>
     <!-- Login -->

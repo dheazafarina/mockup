@@ -1,0 +1,29 @@
+.form-login {
+  border: 0px transparent;
+  border-bottom: 1px solid;
+  border-radius: inherit;
+}
+.form-group {
+  margin-top: 20px;
+  padding: 10px;
+}
+.card {
+  border-radius: 15px;
+  margin-top: -17px;
+}
+.content {
+  background: linear-gradient(to top, #F37335, #FDC830);
+  height: 15rem;
+}
+.img-carousel {
+  margin-top: 35px !important;
+  margin-left: 20%;
+}
+.dropdown-divider {
+  height: 0;
+  margin-top: 5rem;
+  overflow: hidden;
+  border-top: 4px solid #e65d0d;
+  border-radius: 50px;
+  width: 10pc;
+}
